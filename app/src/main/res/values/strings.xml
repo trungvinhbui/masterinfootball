@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">masterinfootball</string>
+    <string name="title_BangTin">Bang tin</string>
+    <string name="title_KetQua">Ket Qua</string>
+    <string name="title_Clip">Clip</string>
+    <string name="title_DuDoan">Du Doan</string>
+    <string name="title_CauThu">Cau Thu</string>
+
+</resources>
