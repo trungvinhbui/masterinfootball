@@ -32,7 +32,7 @@ import java.util.List;
 public class CauThuFragment extends Fragment {
 
     private static final String TAG = CauThuFragment.class.getSimpleName();
-    private static final String URL = "https://raw.githubusercontent.com/trungvinhbui/DatabaseMasterinfootball/master/cauthu1.json";
+    private static final String URL = "https://raw.githubusercontent.com/trungvinhbui/DatabaseMasterinfootball/master/CauThu1.json";
 
     private RecyclerView recyclerView;
     private List<CauThu> CauThuList;
