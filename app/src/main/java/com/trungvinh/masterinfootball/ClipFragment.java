@@ -172,6 +172,7 @@ public class ClipFragment extends Fragment {
             final Clip Clip = ClipList.get(position);
             holder.titleClip.setText(Clip.getTitleClip());
             holder.urlClip.loadData(Clip.getUrlClip(), "text/html", "utf-8");
+            Log.d(TAG, Clip.getTitleClip().toString());
         }
 
         @Override
@@ -185,9 +186,10 @@ public class ClipFragment extends Fragment {
 
             public MyViewHolder(View view) {
                 super(view);
-                titleClip = view.findViewById(R.id.TitleVideo);
-                urlClip = view.findViewById(R.id.videoWebView);
+                titleClip = (TextView) view.findViewById(R.id.TitleVideo);
+                urlClip = (WebView) view.findViewById(R.id.videoWebView);
                 urlClip.getSettings().setJavaScriptEnabled(true);
+                urlClip.getSettings().setDomStorageEnabled(true);
                 urlClip.setWebChromeClient(new WebChromeClient() {
                 });
             }
